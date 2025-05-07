@@ -1,0 +1,31 @@
+﻿## 🔹 Problem Description: Three-Way Partitioning of an Array
+
+Given an array of integers and two boundary values `minimumNumber` and `maximumNumber`, implement an algorithm to rearrange the elements of the array in-place such that:
+
+* All elements less than `minimumNumber` appear before elements within the range `[minimumNumber, maximumNumber]`.
+* All elements within the range `[minimumNumber, maximumNumber]` appear in the middle.
+* All elements greater than `maximumNumber` appear at the end.
+
+The relative order of the elements within each partition does **not** need to be preserved.
+
+### 🔧 Constraints:
+
+* The operation must be performed **in-place** using constant extra space.
+* The array may contain duplicate elements.
+* `minimumNumber` is guaranteed to be less than or equal to `maximumNumber`.
+
+### 🧪 Example:
+
+#### Input:
+
+```cpp
+arr = {1, 4, 3, 6, 2, 1}
+minimumNumber = 2
+maximumNumber = 5
+```
+#### Output:
+```
+1 1 4 3 2 6
+```
+(The numbers `< 2` are first, numbers between `2` and `5` are in the middle, and numbers `> 5` are at the end. The order within groups may vary.)
+---
